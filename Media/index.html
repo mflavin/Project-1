@@ -3,6 +3,13 @@
   <head>
     <title>About Me</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+    <style>
+      img,video {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -14,17 +21,25 @@
     <header>
       <h1>This section should have a picture and a video.</h1>
     </header>
-    <figure>
-      <img src="Fish.jpg" alt="Picture of a Fish." height="100" width="100">
-      <figcaption>Picture of a Blob Fish</figcaption>
-      <img src="HaveADay.PNG" alt="Greeting Picture." height="100" width="100">
-      <figcaption>Almost Have a Nice Day</figcaption>
+    <figure class="image">
+      <img src="Fish.jpg" alt="Picture of a Fish."/>
+      <figcaption>
+        <p>Picture of a Blob Fish</p>
+      </figcaption/>
+      <img src="HaveADay.PNG" alt="Greeting Picture."/>
+      <figcaption>
+        <p>Almost Have a Nice Day<p/>
+      </figcaption>
     </figure>
-    <video height="100" width="100" controls>
-      <source src="Dog.mp4" type="video/mp4">
-      <source src="Dog.ogg" type="video/ogg">
-      Your browser doesn't support this video.
-    </video>
+    <figure class="video">
+      <video controls="controls">
+        <source src="Dog.mp4" type="video/mp4"/>
+        <p>Your browser doesn't support this video.</p>
+      </video>
+      <figcaption>
+        <p>My dog rolling around.</p>
+      </figcaption>
+    </figure>
     <footer>    
       <p>Site design by Matthew Flavin.</p>
     </footer>
